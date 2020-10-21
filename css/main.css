@@ -4,8 +4,140 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  font-family: Overpass, sans-serif;
+  background-image: linear-gradient(#ff9500, #ff5e3a);
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.5;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 6vmin;
+  padding-top: 0;
+}
+
+ul {
+  display: block;
+  padding: 0;
+  list-style-type: none;
+  align-items: center;
+}
+
+li {
+  display: inline-block;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+}
+
+h2, h3, p {
+  color: #fff;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+h3 {
+  text-align: center;
+  border: .2rem solid rgba(255, 255, 255, .7);
+  font-weight: normal;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+h3:hover {
+  color: #000;
+}
+
+p {
+  padding-left: 1rem;
+  padding-bottom: .5rem;
+  padding-top: 1rem;
+  margin: 0;
+  text-align: left;
+  font-weight: normal;
+}
+
+.icon svg {
+  width: 8rem;
+  height: 8rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  h1 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding-top: 1rem;
+    grid-gap: 1.5rem;
+  }
+
+  p {
+    padding-right: 0;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h2 {
+    display: inline-block;
+    text-align: left;
+    margin-top: 0;
+    padding: 1rem;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+
+  .icon svg {
+    display: grid;
+    justify-content: center;
+  }
+
+  body {
+    padding-bottom: 0;
+  }
+
+  h3 {
+    display: grid;
+    justify-content: flex-end;
+    padding: 1rem;
+    margin: 2rem 0 .5rem;
+  }
+
+  .space {
+    margin-top: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  h1 {
+    text-align: center;
+  }
+
+  body {
+    padding-top: 6vmin;
+    padding-bottom: 6vmin;
+  }
+
 }
